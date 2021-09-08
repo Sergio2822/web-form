@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+
+    }
+
+    header {
+    width: 100%;
+    height: 100px;
+    background-color: #47cfac;
+    display: grid;
+    }
+
+    header .header-container{
+    display: flex;
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 5px;
+    }
+
+    form div{
+        margin: 10px;
+        
+    }
+    .feedback-container{
+        display: grid;
+    }
+    .marrital-status-container{
+        display:list-item;
+    }
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            College Application Form
+        </div>
+    </header>
+
+    <form action="">
+        <div>
+            <label for="username">Name</label>
+            <input type= "text" id="username" placeholder ="Type your nombre">
+
+            <label for="email">Email</label>
+            <input type= "email" id="email" placeholder ="Type your email">
+
+            <label for="Phone number">Phone Number</label>
+            <input type= "number" id="Phone number" placeholder ="Type your answer">
+
+            <label for="Age">Age</label>
+            <input type= "number" id="Age" placeholder ="Type your answer">
+
+        </div>
+
+        <div class="marrital-status-container">
+            <label for="">Marrital Status</label>
+            <input type= "radio" id="single" name="status" value="single">
+            <label for="single">Single</label>
+
+            <input type= "radio" id="married" name="status" value="married">
+            <label for="married">Married</label>
+
+            <input type= "radio" id="divorced" name="status" value="divorced">
+            <label for="divorced">Divorced</label>
+
+            <input type= "radio" id="widowed" name="status" value="widowed">
+            <label for="widowed">Widowed</label>
+        </div>
+
+        <div>
+            <label for="">Fields that interest you: </label>
+            <input type="checkbox" id="Sports" name="interest" >
+            <label for="Sports">Sports</label>
+
+            <input type="checkbox" id="business" name="interest" >
+            <label for="business">Business</label>
+
+            <input type="checkbox" id="science" name="interest" >
+            <label for="science">Science</label>
+
+            <input type="checkbox" id="technology" name="interest" >
+            <label for="technology">Technology</label>
+
+            <input type="checkbox" id="psycholocy" name="interest" >
+            <label for="psycholocy">Psycholocy</label>
+        </div>
+
+        <div>
+            <label for="studies">Last level of studies</label>
+            <select name="last-level-studies" id="survey_lev_studies">
+                <option value="none"></option>
+                <option value="doctorate">Doctoral degree</option>
+                <option value="masters">Master's degree</option>
+                <option value="bachelors">Bachelor's degree"</option>
+                <option value="highScool">High School degree</option>
+                <option value="elementary">Elementary School</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" id="other-surveys" name="interest" checked>
+            <label for="other-surveys">I want to take another survey at a later time</label>
+        </div>
+
+
+        <div class="feedback-container">
+            <label for="username">Comments, feedback or suggestions</label>
+            <textarea name="feedback" id="contact-feedback" cols="30" rows="10"></textarea>
+        </div>
+        
+    </form>
+</body>
+</html>
